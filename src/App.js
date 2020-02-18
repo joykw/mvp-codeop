@@ -1,24 +1,21 @@
 import React, { Component } from "react";
-import items from "./items.json";
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
+import Lawfirms from "./components/Lawfirms/Lawfirms"; //I want this to handle list of firms from dataset(instead of list made in items.json)
+// import Lawyer from "./components/Lawyer/Lawyer"; //to handle/iterate through individual firms as they upload profil
+import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react"; //to provide map that pins locations
+import SearchBar from "./components/SearchBar/SearchBar"; //to provide a searchbar that links to the map
+import items from "./items.json"; //this was an alternative to using a provided dataset
 import "./App.css";
-//I want to create an input form with a search button - below resized (small) map
-//to resize the map, I need to put everything is a div and then create a class and input width as 400px
-
-//I want a list of law firms that shows their: location,fee, availability status, maybe sample services
-//I need to make the search button work as a search button
-//use to do app to create a button on the side of each firm called 'book' or 'book appointment'
-//let lawFirm;
 
 export class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      items
+      items //intending it to be a list of lawyers/firms
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
+
   handleChange = event => {
     this.setState({ value: event.target.items });
   };
@@ -31,7 +28,10 @@ export class App extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={this.handleSubmit}>
+        <div>
+          <h1>LawyerUp!</h1>
+        </div>
+        {/* <form onSubmit={this.handleSubmit}>
           <label>
             <input
               type="text"
@@ -40,16 +40,18 @@ export class App extends Component {
             />
           </label>
           <input type="search" value="Search" />
-        </form>
-        <h1>LawyerUp!</h1>
+        </form> */}
+        {/* <h1>LawyerUp!</h1> */}
+        {/* //I deleted items.json which had the list of items-what should then be referenced here? */}
         <ul>
           {this.state.items.map((element, index) => (
             <li key={index}>
               {/* //{element.image} how to reference images from links on items.json */}
-              {element.name},{element.address},{element.fee}
+              {element.name}, {element.address},{element.fee}
             </li>
           ))}
-        </ul>
+        </ul>{" "}
+        <div></div>
         <button
           className="btn btn-default"
           //style={buttonStyle}
@@ -57,10 +59,10 @@ export class App extends Component {
         >
           {this.props.label}
         </button>
+        <SearchBar />
         <div className="map">
           <Map google={this.props.google} zoom={14}>
             <Marker onClick={this.onMarkerClick} name={"Current location"} />
-
             <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
           </Map>
         </div>

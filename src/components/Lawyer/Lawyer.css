@@ -1,0 +1,41 @@
+.Lawyer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 16.66rem;
+  margin: 0 0.5rem 2.3rem 0.5rem;
+}
+
+.Lawyer .image-container {
+  height: 16.66rem;
+  margin-bottom: 1rem;
+}
+.Lawyer h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.Lawyer-information {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Lawyer-information p {
+  font-size: 0.88rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.Lawyer-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Lawyer-fee {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+}
