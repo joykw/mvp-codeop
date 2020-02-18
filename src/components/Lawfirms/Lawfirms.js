@@ -6,9 +6,10 @@ export class Lawfirms extends Component {
   render() {
     return (
       <div className="Lawfirms">
-        {this.props.lawfirms.map(function(lawyer, i) {
+        this are the lawfirms
+        {/* {this.props.lawfirms.map(function(lawyer, i) {
           return <Lawyer key={lawyer.id} lawyer={lawyer} />;
-        })}
+        })} */}
       </div>
     );
   }

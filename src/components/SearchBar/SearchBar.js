@@ -1,87 +1,60 @@
 import React, { Component } from "react";
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
 import "./SearchBar.css";
+// import MapContainer from "../MapContainer";
 
 class SearchBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       term: "",
-      location: "",
-      sortBy: "best_match"
+      matchedData: []
+      // location: "",
+      // sortBy: "best_match"
     };
 
-    this.handleTermChange = this.handleTermChange.bind(this);
-    this.handleLocationChange = this.handleLocationChange.bind(this);
-    this.handleSearch = this.handleSearch.bind(this);
+    // this.handleSearch = this.handleSearch.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  sortByOptions = {
-    "Best Match": "best_match",
-    "Lowest Fee": "fee"
+  handleSubmit = () => {
+    this.props.items.map(item => {
+      if (this.state.term === item.service) {
+        this.setState({
+          matchedData: [...this.state.matchedData, item]
+        });
+      }
+    });
   };
 
-  getSortByClass(sortByOption) {
-    if (this.state.sortBy === sortByOption) {
-      return "active";
-    }
-    return "";
-  }
-
   // Handle State Changes
-  handleSortByChange(sortByOption) {
-    this.setState({
-      sortBy: sortByOption
-    });
-  }
-  handleTermChange(event) {
-    this.setState({
-      term: event.target.value
-    });
-  }
-  handleLocationChange(event) {
-    this.setState({
-      location: event.target.value
-    });
-  }
-  handleSearch(event) {
-    this.props.google(this.state.term, this.state.location, this.state.sortBy);
-    event.preventDefault();
-  }
 
-  renderSortByOptions() {
-    return Object.keys(this.sortByOptions).map(sortByOption => {
-      let sortByOptionValue = this.sortByOptions[sortByOption];
-      return (
-        <li
-          className={this.getSortByClass(sortByOptionValue)}
-          key={sortByOptionValue}
-          onClick={this.handleSortByChange.bind(this, sortByOptionValue)}
-        >
-          {sortByOption}
-        </li>
-      );
-    });
-  }
+  // handleSearch(event) {
+  //   this.props.google(
+  //     this.state.items.filter((element, index) => <li key={index}></li>)
+  //   );
+  //   event.preventDefault();
+  // }
+
+  handleChange = event => {
+    this.setState({ term: event.target.value });
+  };
 
   render() {
     //<Map />;
     return (
       <div className="SearchBar">
-        <div className="SearchBar-sort-options">
-          <ul>{this.renderSortByOptions()}</ul>
-        </div>
-
-        <div className="SearchBar-fields">
-          <input
-            onChange={this.handleTermChange}
-            placeholder="Search Lawfirms"
-          />
-          <input onChange={this.handleLocationChange} placeholder="Where?" />
-        </div>
+       
+        <input
+          onChange={e => this.handleChange(e)}
+          placeholder="Search By Service"
+          value={this.state.term}
+        />
+        {/* <input onChange={this.handleChange} placeholder="Search By Service" /> */}
+        {/* <input onChange={this.handleLocationChange} placeholder="Where?" /> */}
         <div className="SearchBar-submit">
-          <a onClick={this.handleSearch}>Search</a>
+          <button onClick={this.handleSubmit}>Search</button>
         </div>
+        {/* <MapContainer matchedData={this.state.matchedData} /> */}
       </div>
     );
   }

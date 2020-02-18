@@ -1,12 +1,14 @@
 import React, { Component } from "react";
-import Lawfirms from "./components/Lawfirms/Lawfirms"; //I want this to handle list of firms from dataset(instead of list made in items.json)
-// import Lawyer from "./components/Lawyer/Lawyer"; //to handle/iterate through individual firms as they upload profil
-import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react"; //to provide map that pins locations
+// import Lawfirms from "./components/Lawfirms/Lawfirms"; //I want this to handle list of firms from dataset(instead of list made in items.json)
 import SearchBar from "./components/SearchBar/SearchBar"; //to provide a searchbar that links to the map
 import items from "./items.json"; //this was an alternative to using a provided dataset
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MapContainer from "./components/MapContainer";
+import Lawfirms from "./components/Lawfirms/Lawfirms";
+import Home from "./components/Home";
 
-export class App extends Component {
+class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,50 +29,37 @@ export class App extends Component {
 
   render() {
     return (
-      <div>
+      <Router>
         <div>
-          <h1>LawyerUp!</h1>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/map">Map</Link>
+              </li>
+              <li>
+                <Link to="/lawfirms">Lawfirms</Link>
+              </li>
+            </ul>
+          </nav>
+
+          <Switch>
+            <Route path="/map">
+              <MapContainer />
+            </Route>
+            <Route path="/lawfirms">
+              <Lawfirms />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
         </div>
-        {/* <form onSubmit={this.handleSubmit}>
-          <label>
-            <input
-              type="text"
-              value={this.state.value}
-              onChange={this.handleChange}
-            />
-          </label>
-          <input type="search" value="Search" />
-        </form> */}
-        {/* <h1>LawyerUp!</h1> */}
-        {/* //I deleted items.json which had the list of items-what should then be referenced here? */}
-        <ul>
-          {this.state.items.map((element, index) => (
-            <li key={index}>
-              {/* //{element.image} how to reference images from links on items.json */}
-              {element.name}, {element.address},{element.fee}
-            </li>
-          ))}
-        </ul>{" "}
-        <div></div>
-        <button
-          className="btn btn-default"
-          //style={buttonStyle}
-          onClick={this.props.handleClick}
-        >
-          {this.props.label}
-        </button>
-        <SearchBar />
-        <div className="map">
-          <Map google={this.props.google} zoom={14}>
-            <Marker onClick={this.onMarkerClick} name={"Current location"} />
-            <InfoWindow onClose={this.onInfoWindowClose}></InfoWindow>
-          </Map>
-        </div>
-      </div>
+      </Router>
     );
   }
 }
 
-export default GoogleApiWrapper({
-  apiKey: process.env.API_KEY
-})(App);
+export default App;

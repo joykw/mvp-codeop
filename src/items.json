@@ -6,7 +6,8 @@
     "address": "Kenyatta Avenue",
     "fee": "60 euros per hour",
     "lat": 1.23436456,
-    "lng": 3.22345345
+    "lng": 3.22345345,
+    "service": "notary"
   },
   {
     "id": "002",
@@ -15,7 +16,8 @@
     "address": "Moi Avenue",
     "fee": "100 euros per hour",
     "lat": 1.23436456,
-    "lng": 3.22345345
+    "lng": 3.22345345,
+    "service": "affidavit"
   },
   {
     "id": "003",
@@ -24,6 +26,7 @@
     "address": "Harambee Avenue",
     "fee": "200 euros",
     "lat": 1.23436456,
-    "lng": 3.22345345
+    "lng": 3.22345345,
+    "service": "consultation"
   }
 ]
