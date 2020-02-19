@@ -70,3 +70,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+Be ready to defend your choices (e.g. why you chose certain technologies or made product decisions):
+--> used the google map API key 
+--> preferred react because I found it much better to include much with it
+
+Be ready to talk about what you learned through this process.
+-->That I need to get comfortable with 'react' routers
+--> 
+
+Each presentation should be no longer than 10 minutes. Be sure to address the following points:
+High level of what the app is; 
+-->Easy for a potential client to find a lawyer near them
+-->using google maps should show name of firm, fee per hour
+
+Why you made it (ie use case, who would use it)?
+To help clients find affordable lawyers
+-->To help new law firms get clients easily
+
+
+What technologies you used to build it (don’t leave anything out - from design to implementation)?
+What were the major steps taken to build it (ie the process)?
+Potential future features in a second iteration.
+What was most challenging?
+What you feel most proud of?

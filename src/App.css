@@ -1,4 +1,4 @@
-/* .map {
+.map {
   width: 1000px;
   position: relative;
   height: 500px;
@@ -6,7 +6,7 @@
 }
 .header {
   text-align: center;
-} */
+}
 
 .App {
   text-align: center;
@@ -22,8 +22,11 @@ nav {
 
 .nav-links {
   width: 50%;
-  display: ;
   justify-content: space-around;
   align-items: center;
   list-style: none;
+}
+
+#lawfirm {
+  text-decoration-color: rgb(216, 127, 11);
 }

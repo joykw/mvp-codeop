@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("../../images/law.jpg");
+  background-image: url("../../images/hammer2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 30rem;
+  height: 50rem;
+
+ 
 }
 
 .SearchBar-sort-options ul {
@@ -59,7 +61,7 @@
 }
 
 .SearchBar-submit {
-  text-align: center;
+  text-align: left;
 }
 
 .SearchBar-submit a {
@@ -78,7 +80,7 @@
 
 @media only screen and (max-width: 560px) {
   .SearchBar {
-    background-image: url("../../images/law.jpg");
+    background-image: url("../../images/hammer2.jpg");
   }
 
   .SearchBar-sort-options ul {

@@ -1,7 +1,6 @@
 [
   {
     "id": "001",
-    "image": "https://www.shutterstock.com/image-photo/law-bookscomputer-scales-justice-on-desk-719067745?irgwc=1&utm_medium=Affiliate&utm_campaign=Pixabay+GmbH&utm_source=44814&utm_term=https%3A%2F%2Fpixabay.com%2Fphotos%2Fbookcase-law-firm-attorney-335849%2F",
     "name": "Aguko Osman & Co. Advocates",
     "address": "Kenyatta Avenue",
     "fee": "60 euros per hour",
@@ -11,7 +10,6 @@
   },
   {
     "id": "002",
-    "image": "https://pixabay.com/photos/hammer-horizontal-court-justice-802301/",
     "name": "Pearson Darby Specter.",
     "address": "Moi Avenue",
     "fee": "100 euros per hour",
@@ -21,7 +19,6 @@
   },
   {
     "id": "003",
-    "image": "https://pixabay.com/photos/hammer-horizontal-court-justice-802298/",
     "name": "Anjawarlla & Khana",
     "address": "Harambee Avenue",
     "fee": "200 euros",
@@ -31,17 +28,15 @@
   },
   {
     "id": "004",
-    "image": "https://pixabay.com/photos/hammer-horizontal-court-justice-802298/",
     "name": "White & Case Law Firm",
     "address": "Kimathi Street",
     "fee": "50 euros",
     "lat": 1.23436456,
     "lng": 3.22345345,
-    "service": "consultation"
+    "service": "Contract drafting"
   },
   {
     "id": "005",
-    "image": "https://pixabay.com/photos/hammer-horizontal-court-justice-802298/",
     "name": "Clifford Chance",
     "address": "Loita Street",
     "fee": "200 euros",

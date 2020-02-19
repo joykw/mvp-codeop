@@ -6,7 +6,9 @@ export class MapContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firms: [] //intending it to be a list of lawyers/firms
+      firms: []
+      
+       //intending it to be a list of lawyers/firms
     };
   }
 
@@ -58,6 +60,7 @@ export class MapContainer extends Component {
     );
   }
 }
+
 
 export default GoogleApiWrapper({
   apiKey: process.env.API_KEY

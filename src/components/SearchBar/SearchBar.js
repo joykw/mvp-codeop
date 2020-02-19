@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./SearchBar.css";
-// import MapContainer from "../MapContainer";
+
+import MapContainer from "../MapContainer";
 
 class SearchBar extends React.Component {
   constructor(props) {
@@ -18,7 +19,11 @@ class SearchBar extends React.Component {
 
   handleSubmit = () => {
     this.props.items.map(item => {
+      // let services = this.props.items.filter(
+      //   e => e.service === this.state.term
+      // );
       if (this.state.term === item.service) {
+        console.log(this.state.matchedData);
         this.setState({
           matchedData: [...this.state.matchedData, item]
         });
@@ -52,6 +57,17 @@ class SearchBar extends React.Component {
         {/* <input onChange={this.handleLocationChange} placeholder="Where?" /> */}
         <div className="SearchBar-submit">
           <button onClick={this.handleSubmit}>Search</button>
+        </div>
+        <div>
+          {this.state.matchedData[0] && (
+            <div>
+              <h3 id="lawfirm">{this.state.matchedData[0].name}</h3>
+
+              <h4 id="lawfirm">{this.state.matchedData[0].address}</h4>
+
+              <h4 id="lawfirm">{this.state.matchedData[0].fee}</h4>
+            </div>
+          )}
         </div>
         {/* <MapContainer matchedData={this.state.matchedData} /> */}
       </div>
