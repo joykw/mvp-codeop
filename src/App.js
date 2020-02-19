@@ -14,6 +14,7 @@ class App extends Component {
     this.state = {
       items //intending it to be a list of lawyers/firms
     };
+    
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }

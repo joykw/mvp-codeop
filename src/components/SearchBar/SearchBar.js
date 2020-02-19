@@ -43,7 +43,6 @@ class SearchBar extends React.Component {
     //<Map />;
     return (
       <div className="SearchBar">
-       
         <input
           onChange={e => this.handleChange(e)}
           placeholder="Search By Service"

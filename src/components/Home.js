@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-// import Lawfirms from "./components/Lawfirms/Lawfirms"; //I want this to handle list of firms from dataset(instead of list made in items.json)
+//import Lawfirms from "./components/Lawfirms/Lawfirms"; //I want this to handle list of firms from dataset(instead of list made in items.json)
 import SearchBar from "./SearchBar/SearchBar"; //to provide a searchbar that links to the map
 import items from ".././items.json"; //this was an alternative to using a provided dataset
 import ".././App.css";
@@ -28,14 +28,12 @@ class App extends Component {
     return (
       <div>
         <div className="header">
-          <h1>LawyerUp!</h1>
+          <h1>
+            <strong>LawyerUp!</strong>
+          </h1>
         </div>
 
-        <button
-          className="btn btn-default"
-          //style={buttonStyle}
-          onClick={this.props.handleClick}
-        >
+        <button className="btn btn-default" onClick={this.props.handleClick}>
           {this.props.label}
         </button>
         <SearchBar items={this.state.items} />

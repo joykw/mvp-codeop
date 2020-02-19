@@ -15,11 +15,13 @@ export class MapContainer extends Component {
   // }
 
   render() {
+    
     return (
       <div>
         <div className="map">
           <Map
             google={this.props.google}
+            //onClick={this.onMapClicked}
             style={{ width: "100%", height: "100%", position: "relative" }}
             className={"map"}
             zoom={14}

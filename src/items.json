@@ -28,5 +28,25 @@
     "lat": 1.23436456,
     "lng": 3.22345345,
     "service": "consultation"
+  },
+  {
+    "id": "004",
+    "image": "https://pixabay.com/photos/hammer-horizontal-court-justice-802298/",
+    "name": "White & Case Law Firm",
+    "address": "Kimathi Street",
+    "fee": "50 euros",
+    "lat": 1.23436456,
+    "lng": 3.22345345,
+    "service": "consultation"
+  },
+  {
+    "id": "005",
+    "image": "https://pixabay.com/photos/hammer-horizontal-court-justice-802298/",
+    "name": "Clifford Chance",
+    "address": "Loita Street",
+    "fee": "200 euros",
+    "lat": 1.23436456,
+    "lng": 3.22345345,
+    "service": "consultation"
   }
 ]
