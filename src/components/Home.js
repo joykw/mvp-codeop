@@ -4,6 +4,7 @@ import SearchBar from "./SearchBar/SearchBar"; //to provide a searchbar that lin
 import items from ".././items.json"; //this was an alternative to using a provided dataset
 import ".././App.css";
 // import { MapContainer } from "./MapContainer";
+import "./footer"
 
 class App extends Component {
   constructor(props) {

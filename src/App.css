@@ -1,7 +1,7 @@
 .map {
-  width: 1000px;
+  width: 1690px;
   position: relative;
-  height: 500px;
+  height: 800px;
   align-content: center;
 }
 .header {
@@ -12,21 +12,70 @@
   text-align: center;
 }
 
+
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: left;
+  align-items: right;
+  font-family: 'Roboto', sans-serif;
   min-height: 10vh;
   background: #570303;
 }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #570303;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+ul {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+/* ul {
+  list-style-type: none;
+  margin-top: 30px;
+  padding-top: 10px;
+  margin-left: 800px;
+}
+li a {
+
+  display: inline;
+  width: 60px;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+} */
 
 .nav-links {
-  width: 50%;
+  width: 70%;
   justify-content: space-around;
-  align-items: center;
-  list-style: none;
+  align-items: right;
+  list-style: -webkit-radial-gradient();
 }
 
 #lawfirm {
   text-decoration-color: rgb(216, 127, 11);
 }
+
+
