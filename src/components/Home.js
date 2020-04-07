@@ -28,11 +28,11 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="header">
+        {/* <div className="header">
           <h1>
             <strong>LawyerUp!</strong>
           </h1>
-        </div>
+        </div> */}
 
         <button className="btn btn-default" onClick={this.props.handleClick}>
           {this.props.label}

@@ -32,9 +32,13 @@ class App extends Component {
     return (
       <Router>
         <div>
-          
           <nav>
-          <h3>LawyerUp!</h3>
+          <div className="header">
+          <h1>
+            <strong>LawyerUp!</strong>
+          </h1>
+        </div>
+         {/* // <h3>LawyerUp!</h3> */}
             <ul>
               <li>
                 <Link to="/">Home</Link>
