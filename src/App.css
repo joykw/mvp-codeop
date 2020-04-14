@@ -36,6 +36,8 @@ ul {
 
 li {
   float: left;
+  color: aliceblue;
+
 }
 
 li a {
@@ -48,7 +50,7 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color:#570303;
 }
 ul {
   position: -webkit-sticky; /* Safari */
@@ -77,10 +79,11 @@ li a {
   justify-content: space-around;
   align-items: right;
   list-style: -webkit-radial-gradient();
+  color: aliceblue;
 }
 
-#lawfirm {
+/* #lawfirm {
   text-decoration-color: rgb(216, 127, 11);
-}
+} */
 
 

@@ -1,13 +1,14 @@
 .SearchBar {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: top;
   padding-right: 500px;
   padding-left: 300px;
-  background-image: url("../../images/hammer2.jpg");
-  background-size: cover;
+  background-color: #84142d;
+  /* background-image: url("../../images/hammer2.jpg"); */
+  background-size: auto;
   background-repeat: no-repeat;
-  height: 50rem;
+  height: 5rem;
 
  
 }
@@ -82,12 +83,12 @@
 
 .SearchBar-submit a:hover {
   cursor: pointer;
-  background-color: 800000;
+  background-color:  hsl(0, 54%, 34%);
 }
 
 @media only screen and (max-width: 560px) {
   .SearchBar {
-    background-image: url("../../images/hammer2.jpg");
+    background-image: url("../../images/hammer.jpg");
   }
 
   .SearchBar-sort-options ul {
