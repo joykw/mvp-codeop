@@ -2,8 +2,8 @@
   {
     "id": "001",
     "name": "Aguko Osman & Co. Advocates",
-    "address": "Kenyatta Avenue",
-    "fee": "60 euros per hour",
+    "address": "Kenyatta Avenue9, 3-3",
+    "fee": "60€/hr",
     "lat": 1.23436456,
     "lng": 3.22345345,
     "service": "notary"
@@ -11,8 +11,8 @@
   {
     "id": "002",
     "name": "Pearson Darby Specter.",
-    "address": "Moi Avenue",
-    "fee": "100 euros per hour",
+    "address": "Moi Avenue 1, 3-2",
+    "fee": "100€/hr",
     "lat": 1.23436456,
     "lng": 3.22345345,
     "service": "affidavit"
@@ -20,8 +20,8 @@
   {
     "id": "003",
     "name": "Anjawarlla & Khana",
-    "address": "Harambee Avenue",
-    "fee": "200 euros",
+    "address": "Harambee Avenue 27, 2-6",
+    "fee": "20€/hr",
     "lat": 1.23436456,
     "lng": 3.22345345,
     "service": "consultation"
@@ -29,8 +29,8 @@
   {
     "id": "004",
     "name": "White & Case Law Firm",
-    "address": "Kimathi Street",
-    "fee": "50 euros",
+    "address": "Kimathi Street 19, 3-2",
+    "fee": "50€/hr",
     "lat": 1.23436456,
     "lng": 3.22345345,
     "service": "Contract drafting"
@@ -38,8 +38,8 @@
   {
     "id": "005",
     "name": "Clifford Chance",
-    "address": "Loita Street",
-    "fee": "200 euros",
+    "address": "Loita Street 33, 4-3",
+    "fee": "200€/hr",
     "lat": 1.23436456,
     "lng": 3.22345345,
     "service": "consultation"
