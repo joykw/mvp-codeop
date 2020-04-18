@@ -1,9 +1,14 @@
 .map {
-  width: 1690px;
-  position: relative;
-  height: 800px;
-  align-content: center;
+  width: 20px;
+  position: center;
+  height: 500px;
+  align-content: relative;
+  padding-top: 3rem;
+  padding-right: 50rem;
+  padding-left: 0rem;
+
 }
+
 .header {
   text-align: left;
   color: aliceblue;
@@ -12,19 +17,19 @@
 
 }
 
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
-
-nav {
+ nav {
   display: flex;
   justify-content: space-around;
   align-items: right;
   font-family: 'Roboto', sans-serif;
   min-height: 10vh;
   background: #570303;
-}
+} 
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -50,9 +55,12 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color:#570303;
-}
+  background-color:#f7f7f7;
+  text-decoration: none;
+  }
+
 ul {
+  /* text-decoration: none; */
   position: -webkit-sticky; /* Safari */
   position: sticky;
   top: 0;
@@ -74,13 +82,15 @@ li a {
   color: white;
 } */
 
-.nav-links {
+/* .nav-links {
+  color:#29c7ac;
+  list-style: none;
   width: 70%;
   justify-content: space-around;
   align-items: right;
-  list-style: -webkit-radial-gradient();
-  color: aliceblue;
-}
+  /* list-style: -webkit-radial-gradient(); */
+  /* color: aliceblue;
+} */ 
 
 /* #lawfirm {
   text-decoration-color: rgb(216, 127, 11);

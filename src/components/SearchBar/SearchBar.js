@@ -45,7 +45,7 @@ class SearchBar extends React.Component {
   };
 
   render() {
-    //<Map />;
+    
     return (
       <div className="SearchBar">
         <input
@@ -54,7 +54,7 @@ class SearchBar extends React.Component {
           value={this.state.term}
         />
         {/* <input onChange={this.handleChange} placeholder="Search By Service" /> */}
-        {/* <input onChange={this.handleLocationChange} placeholder="Where?" /> */}
+        
         <div className="SearchBar-submit">
           <button onClick={this.handleSubmit}>Search</button>
         </div>
@@ -69,8 +69,12 @@ class SearchBar extends React.Component {
             </div>
           )}
         </div>
+        <div>
+        <MapContainer />;
+        </div>
         {/* <MapContainer matchedData={this.state.matchedData} /> */}
       </div>
+    
     );
   }
 }

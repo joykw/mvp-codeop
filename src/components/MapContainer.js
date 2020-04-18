@@ -6,45 +6,103 @@ export class MapContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      firms: []
-      
-       //intending it to be a list of lawyers/firms
+      showingInfoWindow: false,
+      activeMarker: {},
+      // selectedPlace: {}
+
+      lawfirms:[{lat:-1.2921, lng: 36.8219},
+                {latitude: -1.283630, longitude: 36.820430},
+                {latitude: -1.253742, longitude: 36.805302},
+                {latitude: -1.337094, longitude: 36.723084},
+                {latitude: -1.286447, longitude: 36.825895},
+                {latitude: -1.284993, longitude: 36.821821}]
+
     };
+   }
+  displayMarkers = () => {
+    return this.state.lawfirms.map((lawfirm, index) => {
+      return <Marker key={index} id={index} position={{
+       lat: lawfirm.latitude,
+       lng: lawfirm.longitude
+     }}
+     onClick={() => console.log("You clicked me!")} />
+    })
   }
+ 
+
 
   // componentDidMount() {
-  //   this.setState({ firms: items.data });
+  //   this.setState({ lawfirms: items.data });
   // }
 
   render() {
-    
+   
     return (
       <div>
+       
+    
+   
         <div className="map">
           <Map
             google={this.props.google}
-            //onClick={this.onMapClicked}
-            style={{ width: "100%", height: "100%", position: "relative" }}
+           onClick={this.onMapClicked}
+            style={{ 
+              width: "100%", 
+              height: "50%",
+              position: "relative" }}
+            initialCenter={{ lat: -1.2921, lng: 36.8219}}
             className={"map"}
-            zoom={14}
+            zoom={11}
           >
+            
+
             <Marker
               title={"Aguko Osman & Co. Advocates"}
+              address={"Pioneer House, 5th flr, 501, Moi Ave"}
+              position={{ lat: -1.283630, lng: 36.820430 }}
               Fee={"60€/hr"}
-              position={{ lat: 37.778519, lng: -122.40564 }}
+             
             />
+
             <Marker
-              name={"Dolores"}
-              position={{ lat: 37.759703, lng: -122.428093 }}
+              title={"Anjarwalla & Khanna"}
+              address={"ALN House, Eldama Ravine Close"}
+              position={{ lat: -1.253742, lng: 36.805302 }}
+              Fee={"100€/hr"}
+             
             />
-            <Marker />
+
             <Marker
-              name={"Your position"}
-              position={{ lat: 37.762391, lng: -122.439192 }}
+              title={"Ngugi Mburu Advocates"}
+              address={"The Watermark Business Park, 1st flr Ndege Road, Karen"}
+              position={{ lat: -1.337094, lng: 36.723084 }}
+              Fee={"50€/hr"}
+             
             />
+
+            <Marker
+              title={"JA Makau & Co. Advocates"}
+              address={"Commerce House 6th flr, Moi Ave"}
+              position={{ lat: -1.286447, lng: 36.825895 }}
+              Fee={"30€/hr"}
+             
+            />
+
+
+              <Marker
+              title={"Ahmednasir, Abdikadir & Co. Advocateso. Advocates"}
+              address={"CBA Building 2nd flr, Standard Street"}
+              position={{ lat: -1.284993, lng: 36.821821 }}
+              Fee={"30€/hr"}
+             
+            />
+
+
+           
             <InfoWindow onClose={this.onInfoWindowClose}>
-              <div>{/* <h1>{this.state.selectedPlace.name}</h1> */}</div>
+          {/* <div><h1>{this.state.selectedPlace.name}</h1></div>  */}
             </InfoWindow>
+            {this.displayMarkers()}
           </Map>
         </div>
         <div>

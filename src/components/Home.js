@@ -3,7 +3,8 @@ import React, { Component } from "react";
 import SearchBar from "./SearchBar/SearchBar"; //to provide a searchbar that links to the map
 import items from ".././items.json"; //this was an alternative to using a provided dataset
 import ".././App.css";
-// import { MapContainer } from "./MapContainer";
+import { MapContainer } from "./MapContainer";
+//import { MapContainer } from "./MapContainer";
 
 
 
@@ -41,6 +42,7 @@ class App extends Component {
         <SearchBar items={this.state.items} />
         {/* <MapContainer /> */}
       </div>
+     
     );
   }
 }

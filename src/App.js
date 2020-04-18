@@ -38,15 +38,15 @@ class App extends Component {
             <strong>LawyerUp!</strong>
           </h1>
         </div>
-         {/* // <h3>LawyerUp!</h3> */}
+         
             <ul>
               <li>
                 <Link to="/">Home</Link>
               </li>
               
-              <li>
+              {/* <li>
                 <Link to="/map">Map</Link>
-              </li>
+              </li> */}
               
               <li>
                 <Link to="/lawfirms">Law firms</Link>
@@ -58,6 +58,7 @@ class App extends Component {
             <Route path="/map">
               <MapContainer />
             </Route>
+
             <Route path="/lawfirms">
               <Lawfirms />
             </Route>

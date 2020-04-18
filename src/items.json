@@ -2,46 +2,46 @@
   {
     "id": "001",
     "name": "Aguko Osman & Co. Advocates",
-    "address": "Kenyatta Avenue9, 3-3",
+    "address": "Pioneer House, 5th flr, 501, Moi Ave",
     "fee": "60€/hr",
-    "lat": 1.23436456,
-    "lng": 3.22345345,
+    "lat": -1.283630,
+    "lng": 36.820430,
     "service": "notary"
   },
   {
     "id": "002",
-    "name": "Pearson Darby Specter.",
-    "address": "Moi Avenue 1, 3-2",
+    "name": "Anjarwalla & Khanna",
+    "address": "ALN House, Eldama Ravine Close",
     "fee": "100€/hr",
-    "lat": 1.23436456,
-    "lng": 3.22345345,
+    "lat":-1.253742,
+    "lng":  36.805302,
     "service": "affidavit"
   },
   {
     "id": "003",
-    "name": "Anjawarlla & Khana",
-    "address": "Harambee Avenue 27, 2-6",
-    "fee": "20€/hr",
-    "lat": 1.23436456,
-    "lng": 3.22345345,
-    "service": "consultation"
+    "name": "Ngugi Mburu Advocates",
+    "address": "The Watermark Business Park, 1st flr Ndege Road, Karen",
+    "fee": "50€/hr",
+    "lat": -1.337094,
+    "lng": 36.723084,
+    "service": "corporate matters"
   },
   {
     "id": "004",
-    "name": "White & Case Law Firm",
-    "address": "Kimathi Street 19, 3-2",
-    "fee": "50€/hr",
-    "lat": 1.23436456,
-    "lng": 3.22345345,
-    "service": "Contract drafting"
+    "name": "JA Makau & Co. Advocates",
+    "address": "Commerce House 6th flr, Moi Ave",
+    "fee": "80€/hr",
+    "lat": -1.286447,
+    "lng": 36.825895,
+    "service": "contract analysis"
   },
   {
     "id": "005",
-    "name": "Clifford Chance",
-    "address": "Loita Street 33, 4-3",
-    "fee": "200€/hr",
-    "lat": 1.23436456,
-    "lng": 3.22345345,
+    "name": "Ahmednasir, Abdikadir & Co. Advocates",
+    "address": "CBA Building 2nd flr, Standard Street",
+    "fee": "40€/hr",
+    "lat": -1.284993,
+    "lng": 36.821821,
     "service": "consultation"
   }
 ]
