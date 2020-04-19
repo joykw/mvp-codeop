@@ -7,7 +7,7 @@ export class MapContainer extends Component {
     super(props);
     this.state = {
       showingInfoWindow:true,
-      //activeMarker: {},
+      activeMarker: {},
       // selectedPlace: {}
 
       lawfirms:[{lat:-1.2921, lng: 36.8219},
@@ -54,7 +54,7 @@ export class MapContainer extends Component {
               position: "relative" }}
             initialCenter={{ lat: -1.2921, lng: 36.8219}}
             className={"map"}
-            zoom={11}
+            zoom={15}
           >
             
 
@@ -104,9 +104,11 @@ export class MapContainer extends Component {
 
            
             <InfoWindow onClose={this.onInfoWindowClose}>
-          {/* <div><h1>{this.state.selectedPlace.name}</h1></div>  */}
+           {/* <div>
+            <h1>{this.state.selectedPlace.name}</h1>
+          </div>   */}
             </InfoWindow>
-            {this.displayMarkers()}
+             {this.displayMarkers()} 
           </Map>
         </div>
         <div>
