@@ -6,8 +6,8 @@ export class MapContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      showingInfoWindow: false,
-      activeMarker: {},
+      showingInfoWindow:true,
+      //activeMarker: {},
       // selectedPlace: {}
 
       lawfirms:[{lat:-1.2921, lng: 36.8219},
@@ -19,16 +19,18 @@ export class MapContainer extends Component {
 
     };
    }
+  
   displayMarkers = () => {
-    return this.state.lawfirms.map((lawfirm, index) => {
-      return <Marker key={index} id={index} position={{
-       lat: lawfirm.latitude,
-       lng: lawfirm.longitude
+    return this.state.lawfirms.map((lawfirm, id) => {
+      return <Marker key={id} id={id} position={{
+       lat: lawfirm.lat,
+       lng: lawfirm.lng
      }}
-     onClick={() => console.log("You clicked me!")} />
+     onClick={() => console.log({id})} />
     })
   }
  
+
 
 
   // componentDidMount() {
@@ -48,7 +50,7 @@ export class MapContainer extends Component {
            onClick={this.onMapClicked}
             style={{ 
               width: "100%", 
-              height: "50%",
+              height: "80%",
               position: "relative" }}
             initialCenter={{ lat: -1.2921, lng: 36.8219}}
             className={"map"}
@@ -69,8 +71,10 @@ export class MapContainer extends Component {
               address={"ALN House, Eldama Ravine Close"}
               position={{ lat: -1.253742, lng: 36.805302 }}
               Fee={"100€/hr"}
+             // icon='http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png'
              
             />
+           
 
             <Marker
               title={"Ngugi Mburu Advocates"}
