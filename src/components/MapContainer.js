@@ -15,7 +15,7 @@ export class MapContainer extends Component {
                 {latitude: -1.253742, longitude: 36.805302},
                 {latitude: -1.337094, longitude: 36.723084},
                 {latitude: -1.286447, longitude: 36.825895},
-                {latitude: -1.284993, longitude: 36.821821}]
+                {latitude: -1.285086, longitude: 36.821813}]
 
     };
    }
@@ -29,6 +29,24 @@ export class MapContainer extends Component {
      onClick={() => console.log({id})} />
     })
   }
+
+//   let facilityPins = this.props.facilities.map((facility, index) ={
+//     if (facility.latitude === null || facility.longitude === null){
+//       return null
+//     } else {
+//       return <FacilityPin 
+//               onClick={()=>this.setPinAsCenter(facility)}
+//               key={index} 
+//               onChildMouseEnter={this.onChildMouseEnter}
+//               onChildMouseLeave={this.onChildMouseLeave} 
+//               handlePinClick={this.handleOnClick} 
+//               facility={facility}
+//               hover={this.state.hover} 
+//               lat={facility.latitude} 
+//               lng={facility.longitude} 
+//              />
+//     }
+//  }
  
 
 
@@ -46,13 +64,20 @@ export class MapContainer extends Component {
    
         <div className="map">
           <Map
+          bootstrapURLKeys={{
+            key: process.env.API_KEY, 
+            language: 'en'
+         }}
             google={this.props.google}
            onClick={this.onMapClicked}
+           onChildMouseEnter={this.onChildMouseEnter}
+           onChildMouseLeave={this.onChildMouseLeave}
             style={{ 
               width: "100%", 
-              height: "80%",
+              height: "69%",
               position: "relative" }}
             initialCenter={{ lat: -1.2921, lng: 36.8219}}
+            center={this.state.center}
             className={"map"}
             zoom={15}
           >
@@ -82,6 +107,7 @@ export class MapContainer extends Component {
               position={{ lat: -1.337094, lng: 36.723084 }}
               Fee={"50€/hr"}
              
+             
             />
 
             <Marker
@@ -94,9 +120,9 @@ export class MapContainer extends Component {
 
 
               <Marker
-              title={"Ahmednasir, Abdikadir & Co. Advocateso. Advocates"}
+              title={"Ahmednasir Abdikadir & Co. Advocates"}
               address={"CBA Building 2nd flr, Standard Street"}
-              position={{ lat: -1.284993, lng: 36.821821 }}
+              position={{ lat: -1.285086, lng: 36.821813 }}
               Fee={"30€/hr"}
              
             />

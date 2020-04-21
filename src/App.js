@@ -8,6 +8,7 @@ import MapContainer from "./components/MapContainer";
 import Lawfirms from "./components/Lawfirms/Lawfirms";
 import Home from "./components/Home";
 
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -27,9 +28,13 @@ class App extends Component {
     alert("search " + this.state.items);
     event.preventDefault();
   };
+  
 
   render() {
+   
     return (
+      
+  
       <Router>
         <div>
           <nav>

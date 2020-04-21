@@ -12,7 +12,7 @@
     "id": "002",
     "name": "Anjarwalla & Khanna",
     "address": "ALN House, Eldama Ravine Close",
-    "fee": "10€/hr",
+    "fee": "70€/hr",
     "lat":-1.253742,
     "lng":  36.805302,
     "service": "affidavit"
@@ -37,11 +37,11 @@
   },
   {
     "id": "005",
-    "name": "Ahmednasir, Abdikadir & Co. Advocates",
+    "name": "Ahmednasir Abdikadir & Co. Advocates",
     "address": "CBA Building 2nd flr, Standard Street",
     "fee": "40€/hr",
-    "lat": -1.284993,
-    "lng": 36.821821,
+    "lat": -1.285086,
+    "lng": 36.821813,
     "service": "consultation"
   }
 ]

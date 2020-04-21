@@ -10,7 +10,9 @@ export class Lawfirms extends Component {
          {/* {this.props.lawfirms.map(function(lawyer, i) {
           return <Lawyer key={lawyer.id} lawyer={lawyer} />;
         })}  */}
+        
       </div>
+      
     );
   }
 }
