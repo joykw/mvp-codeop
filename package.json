@@ -35,7 +35,7 @@
       "last 1 safari version"
     ]
   },
-  "description": "",
+  "description": "In the project directory, you can run:",
   "main": "Nav.js",
   "repository": {
     "type": "git",
@@ -46,5 +46,6 @@
   "bugs": {
     "url": "https://github.com/joykw/mvp-codeop/issues"
   },
-  "homepage": "https://github.com/joykw/mvp-codeop#readme"
+  "homepage": "https://github.com/joykw/mvp-codeop#readme",
+  "devDependencies": {}
 }
