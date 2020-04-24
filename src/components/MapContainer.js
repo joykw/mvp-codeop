@@ -12,8 +12,8 @@ export class MapContainer extends Component {
 
       lawfirms:[{lat:-1.2921, lng: 36.8219},
                 {latitude: -1.283630, longitude: 36.820430},
-                {latitude: -1.253742, longitude: 36.805302},
-                {latitude: -1.337094, longitude: 36.723084},
+                {latitude: -1.285268, longitude: 36.818377},
+                {latitude: -1.262349, longitude: 36.766421},
                 {latitude: -1.286447, longitude: 36.825895},
                 {latitude: -1.285086, longitude: 36.821813}]
 
@@ -88,23 +88,26 @@ export class MapContainer extends Component {
               address={"Pioneer House, 5th flr, 501, Moi Ave"}
               position={{ lat: -1.283630, lng: 36.820430 }}
               Fee={"60€/hr"}
+              Status={"available"}
              
             />
 
             <Marker
-              title={"Anjarwalla & Khanna"}
-              address={"ALN House, Eldama Ravine Close"}
-              position={{ lat: -1.253742, lng: 36.805302 }}
-              Fee={"100€/hr"}
+              title={"Simba & Simba Advocates"}
+              address={"Finance House, 6th Flr, Loita Street"}
+              position={{ lat: -1.285268, lng: 36.818377 }}
+              Fee={"70€/hr"}
+           
+
              // icon='http://maps.google.com/mapfiles/kml/pushpin/grn-pushpin.png'
              
             />
            
 
             <Marker
-              title={"Ngugi Mburu Advocates"}
-              address={"The Watermark Business Park, 1st flr Ndege Road, Karen"}
-              position={{ lat: -1.337094, lng: 36.723084 }}
+              title={"Dentons Hamilton Harrison & Matthews"}
+              address={"Delta Office Suites Off Waiyaki Way Block A, 1st Floor"}
+              position={{ lat: -1.262349, lng: 36.766421 }}
               Fee={"50€/hr"}
              
              

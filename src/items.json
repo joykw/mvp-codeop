@@ -10,11 +10,11 @@
   },
   {
     "id": "002",
-    "name": "Anjarwalla & Khanna",
-    "address": "ALN House, Eldama Ravine Close",
+    "name": "Simba & Simba Advocates",
+    "address": "Finance House, 6th Flr, Loita Street",
     "fee": "70€/hr",
-    "lat":-1.253742,
-    "lng":  36.805302,
+    "lat":-1.285268,
+    "lng": 36.818377,
     "service": "affidavit"
   },
   {
@@ -22,8 +22,8 @@
     "name": "Dentons Hamilton Harrison & Matthews",
     "address": "Delta Office Suites Off Waiyaki Way Block A, 1st Floor",
     "fee": "50€/hr",
-    "lat": -1.337094,
-    "lng": 36.723084,
+    "lat": -1.262349,
+    "lng":  36.766421,
     "service": "corporate matters"
   },
   {
